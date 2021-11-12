@@ -1,0 +1,19 @@
+.products-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 40px 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+@media all and (max-width: 776px) {
+    .products-list{
+        grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    }
+}
+
+@media all and (max-width: 450px) {
+    .products-list{
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    }
+}
